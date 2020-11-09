@@ -9,5 +9,7 @@
             %li
               = link_to "#", class: "nav-link" do
                 %span.mr-1 リストを作成
-                %i.fas.fa-edit
-            %li= link_to "サインアウト", "#", class: "nav-link"
+                = icon("fas", "edit")
+              = link_to "#", class: "nav-link" do
+                %span.mr-1 サインアウト 
+                = icon("fas", "sign-out-alt")

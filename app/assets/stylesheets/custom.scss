@@ -39,6 +39,9 @@ body {
         display: flex;
         padding: 0;
         align-items: center;
+        li{
+          display: flex;
+        }
         .listNew {
           &:after {
             font-family: "Font Awesome 5 Free";
