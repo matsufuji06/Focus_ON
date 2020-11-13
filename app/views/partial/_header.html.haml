@@ -10,6 +10,6 @@
               = link_to "#", class: "nav-link" do
                 %span.mr-1 リストを作成
                 = icon("fas", "edit")
-              = link_to "#", class: "nav-link" do
+              = link_to destroy_user_session_path, class: "nav-link", method: :delete do
                 %span.mr-1 サインアウト 
                 = icon("fas", "sign-out-alt")
