@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2020_11_14_074747) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "provider"
     t.string "uid"
-    t.string "name"
+    t.string "name", default: "", null: false
     t.string "nickname"
     t.string "location"
     t.string "image"
