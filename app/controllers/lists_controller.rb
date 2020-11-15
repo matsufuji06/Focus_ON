@@ -14,6 +14,7 @@ class ListsController < ApplicationController
   end
 
   def edit
+    @list = List.find_by(id: params[:id])
   end
 
   def update
