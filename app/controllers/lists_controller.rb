@@ -18,6 +18,12 @@ class ListsController < ApplicationController
   end
 
   def update
+    @list = List.find_by(id: params[:id])
+    if @list.update_attributes(list_params)
+      redirect_to :root
+    else
+      render action: :edit
+    end
   end
 
   private
