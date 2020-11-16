@@ -51,10 +51,11 @@
           &_detail {
             display: none;
             &.is-exist {
-              display: block;
+              display: flex;
+              justify-content: space-between;
               color: #999;
               & > i {
-                display: block;
+                // display: block;
               }
             }
           }
