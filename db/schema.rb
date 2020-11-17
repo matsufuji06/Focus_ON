@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2020_11_16_223908) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.integer "list_id"
     t.integer "card_id"
     t.text "text"
     t.datetime "created_at", precision: 6, null: false
