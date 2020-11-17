@@ -6,6 +6,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:text).merge(card_id: params[:card_id])
+    params.require(:comment).permit(:text).merge(list_id: params[:list_id], card_id: params[:card_id])
   end
 end
