@@ -17,6 +17,8 @@ class CardsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @card.comments
   end
 
   def edit
