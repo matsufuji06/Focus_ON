@@ -14,16 +14,15 @@
                 %h3.card_title= card.title
                 - if card.memo.size > 0
                   .card_detail.is-exist
-                    %i.fas.fa-bars
-                    %i.fas.fa-stopwatch#stopwatch
+                    %span
+                      %i.fas.fa-bars
+            .moveTimer
+              %i.fas.fa-stopwatch#timer_icon
           .addCard
             %i.far.fa-plus-square
             = link_to "さらにカードを追加", new_list_card_path(list), class: "addCard_link"
 
-%p いまから
-%span#timer 以内に注文すると50%OFF
-
-
+-# Javascript
 :javascript
   const countdown = (due) => {
     const now = new Date();
@@ -46,7 +45,7 @@
   const recalc = () => {
     const counter = countdown(goal);
     const time = `${counter[1]}時間${counter[2]}分${counter[3]}秒`;
-    document.getElementById("timer").textContent = time;
+    document.getElementByClassName("moveTimer").textContent = time;
     refresh();
   }
     
@@ -54,4 +53,6 @@
     setTimeout(recalc, 1000);
   }
 
-  recalc();
+  document.getElementById("timer_icon").onclick = function() {
+    recalc();
+  }
