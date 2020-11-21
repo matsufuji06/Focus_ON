@@ -14,7 +14,50 @@
                 %h3.card_title= card.title
                 - if card.memo.size > 0
                   .card_detail.is-exist
-                    %i.fas.fa-bars
+                    %span
+                      %i.fas.fa-bars
+            .moveTimer
+              %i.fas.fa-stopwatch#timer_icon
           .addCard
             %i.far.fa-plus-square
             = link_to "さらにカードを追加", new_list_card_path(list), class: "addCard_link"
+
+  %div#timer 00:00.000
+  %button#start Start
+  %button#stop Stop
+  %button#reset Reset
+
+-# JSストップウォッチ
+:javascript
+  const timer = document.getElementById('timer');
+  const start = document.getElementById('start');
+  const stop = document.getElementById('stop');
+  const reset = document.getElementById('reset');
+
+  let startTime;
+  let timeoutId;
+
+  function countUp() {
+    const d = new Date(Date.now() - startTime);
+    const m = String(d.getMinutes()).padStart(2, '0');
+    const s = String(d.getSeconds()).padStart(2, '0');
+    const ms = String(d.getMilliseconds()).padStart(3, '0');
+    timer.textContent = `${m}:${s}.${ms}`;
+
+    timeoutId = setTimeout(() => {
+      countUp();
+    }, 10);
+  }
+
+  start.addEventListener('click', () => {
+    startTime = Date.now();
+    countUp();
+  });
+
+  stop.addEventListener('click', () => {
+    clearTimeout(timeoutId);
+  });
+
+  reset.addEventListener('click', () => {
+    timer.textContent = "00:00.000"
+  });
