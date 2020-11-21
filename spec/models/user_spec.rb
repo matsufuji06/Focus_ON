@@ -2,7 +2,7 @@ require 'rails_helper'
 describe User do
   describe '#create' do
     it "nameがない場合は登録できないこと" do
-      user = User.new(name: nil, email: "mmm@gmail.com", password: "00000000", password_confirmation: "00000000")
+      user = User.new(name: nil, email: "mmm@gmail.com", password: "00000000", password_confirmation: "00000000", provider: "facebook", uid: "12345", nickname: "Naoya", location: "Fukuoka", image: "")
       user.valid?
       expect(user.errors[:name]).to include("can't be blank")
     end
