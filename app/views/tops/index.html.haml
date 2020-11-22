@@ -21,11 +21,12 @@
           .addCard
             %i.far.fa-plus-square
             = link_to "さらにカードを追加", new_list_card_path(list), class: "addCard_link"
-
-  %div#timer 00:00.000
-  %button#start Start
-  %button#stop Stop
-  %button#reset Reset
+  .timer_container
+    %div#timer 00:00.000
+    .controls
+      %btn#start Start
+      %btn#stop Stop
+      %btn#reset Reset
 
 -# JSストップウォッチ
 :javascript
