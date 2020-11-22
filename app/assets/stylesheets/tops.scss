@@ -43,7 +43,7 @@
           color: #323232;
         }
         .card {
-          // margin-bottom: 10px;
+          margin-bottom: 10px;
           padding: 10px;
           &_title {
             font-size: 17px;
@@ -55,12 +55,6 @@
               justify-content: space-between;
               color: #999;
             }
-          }
-        }
-        .moveTimer{
-          i{
-            margin-left: 10px;
-            color: #999;
           }
         }
         .addCard {
@@ -90,7 +84,7 @@
     .controls{
       display: flex;
       justify-content: space-evenly;
-      .btn{
+      button{
         width: 80px;
         height: 45px;
         line-height: 45px;
@@ -98,6 +92,11 @@
         font-weight: bold;
         cursor: pointer;
         user-select: none;
+        border-radius: 10px;
+        border: none;
+      }
+      #start, #stop{
+        margin-right: 5px;
       }
     }
   }

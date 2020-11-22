@@ -16,17 +16,15 @@
                   .card_detail.is-exist
                     %span
                       %i.fas.fa-bars
-            -# .moveTimer
-            -#   %i.fas.fa-stopwatch#timer_icon
           .addCard
             %i.far.fa-plus-square
             = link_to "さらにカードを追加", new_list_card_path(list), class: "addCard_link"
   .timer_container
     %div#timer 00:00.000
     .controls
-      %btn#start Start
-      %btn#stop Stop
-      %btn#reset Reset
+      %button#start Start
+      %button#stop Stop
+      %button#reset Reset
 
 -# JSストップウォッチ
 :javascript
