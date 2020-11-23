@@ -40,8 +40,17 @@
 ・リセット
 
 ## 技術一覧
-
-## 使い方
+・Ruby
+・Ruby on Rails
+・haml
+・scss
+・JavaScript
+・Gem('font-awesome-sass', 'devise', 'omniauth', 'omniauth-facebook', 'omniauth-twitter', 'omniauth-google-oauth2', 'dotenv-rails')
+・Github
+・Heroku
 
 ## アプリへの思い
+チーム開発の時に用いた"Trello"に近いようなアプリケーションを作りたいと思ったのがきっかけです。個人的にも仕事やプライベートで使えるようなシンプルなアプリに仕上がったのではと思います。
+また、本家"Trello"にはなかったような、Facebook, Twitter, Googleログイン機能やストップウォッチ機能を実装することで、自らの技術力を高めていくことにも取り組んでいくことができました。
+なお、追加実装していきたい点としては、JSを用いてもカード移動機能です。単体テストも記述ができておりません（外部APIとの兼ね合いで難易度が上がり、挫折した）ので、ブラッシュアップしていきたいと考えています。
 
