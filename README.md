@@ -1,24 +1,16 @@
-# README
+## 概要
+→１行で！
+→画像
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## URL
 
-Things you may want to cover:
+## 機能一覧
+→簡単に
 
-* Ruby version
+## 技術一覧
 
-* System dependencies
 
-* Configuration
+## 使い方
 
-* Database creation
+## アプリへの思い
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
