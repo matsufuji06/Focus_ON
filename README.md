@@ -25,29 +25,29 @@
 
 ## 機能一覧
 #### ログイン機能
-・devise
+・devise  
 ・外部APIによるログイン(Facebook, Twitter, Google Oauth2)
 
 #### リスト&タスクCRUD機能
-・投稿機能
-・詳細確認
-・編集機能
-・削除機能
+・投稿機能  
+・詳細確認  
+・編集機能  
+・削除機能  
 
 #### ストップウォッチ機能
-・スタート
-・ストップ
-・リセット
+・スタート  
+・ストップ  
+・リセット  
 
 ## 技術一覧
-・Ruby
-・Ruby on Rails
-・haml
-・scss
-・JavaScript
-・Gem('font-awesome-sass', 'devise', 'omniauth', 'omniauth-facebook', 'omniauth-twitter', 'omniauth-google-oauth2', 'dotenv-rails')
-・Github
-・Heroku
+・Ruby  
+・Ruby on Rails  
+・haml  
+・scss  
+・JavaScript  
+・Gem('font-awesome-sass', 'devise', 'omniauth', 'omniauth-facebook', 'omniauth-twitter', 'omniauth-google-oauth2', 'dotenv-rails')  
+・Github  
+・Heroku  
 
 ## アプリへの想い
 チーム開発の時に用いた"Trello"に近いようなアプリケーションを作りたいと思ったのがきっかけです。個人的にも仕事やプライベートで使えるようなシンプルなアプリに仕上がったのではと思います。
