@@ -9,7 +9,7 @@
             = link_to(content_tag(:i, '', class: 'fas fa-pen'), edit_list_path(list))
         .cardWrapper
           - list.cards.each do |card|
-            = link_to list_card_path(list, card), class:"cardDetail_link" do
+            = link_to list_card_path(list, card), class:"cardDetail_link", data: {"turbolinks" => false} do
               .card
                 %h3.card_title= card.title
                 - if card.memo.size > 0
