@@ -40,8 +40,8 @@
 - リセット  
 
 ## 技術一覧
-- Ruby  
-- Ruby on Rails  
+- Ruby 2.5.1  
+- Ruby on Rails 6.0.3.4  
 - haml  
 - scss  
 - JavaScript  
